@@ -1,0 +1,14 @@
+logs
+*.log
+npm-debug.log*
+.eslintcache
+
+/coverage
+/dist
+/node_modules
+/temp/bundle.js
+
+.DS_Store
+.idea
+.vscode
+.vs

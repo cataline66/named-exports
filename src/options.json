@@ -1,0 +1,53 @@
+{
+  "patterns": {
+    "type": "array",
+    "items": {
+      "additionalProperties": false,
+      "properties": {
+        "basePath": {
+          "type": "string"
+        },
+        "paths": {
+          "type": "array"
+        },
+        "ignore": {
+          "type": "array"
+        },
+        "includeFolders": {
+          "type": "boolean"
+        },
+        "indexOfFolders": {
+          "type": "string"
+        },
+        "output": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "filename": {
+              "type": "string"
+            },
+            "comment": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "semi": {
+              "type": "boolean"
+            },
+            "singleQuote": {
+              "type": "boolean"
+            },
+            "finalNewLine": {
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    }
+  }
+}
